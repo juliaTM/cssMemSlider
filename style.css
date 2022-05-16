@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+}
+
+body {
+    
+    background-color: rgb(140, 157, 221);
+}
+.wrapper {
+    
+	position: relative;
+    height: 520px;
+    width: 900px;
+    /*margin: 0 auto ;
+    margin-top: 20px;*/
+    /*margin: 100px auto 0;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  
+
+    
+   
+   
+}
+
+.slider {
+	background-color: #ddd;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+    border-radius: 25px;
+    
+  height: 480px;
+  width: 900px;
+ 
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.wrapper > input {
+    display: none;
+}
+
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+.slide1 { background: url(images/udav.jpg); }
+.slide2 { background: url(images/bg_1.jpg); }
+.slide3 { background: url(images/bg_2.jpg); }
+.slide4 { background: url(images/bg_3.jpg); }
+
+.wrapper .controls {
+	right:-1px;
+	margin-left: -98px;
+	position: absolute;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
